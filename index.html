@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symmetric Encryption Tool</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RSA CRYPTOSYSTEM</h1>
+        
+        <label for="inputText">Input Text:</label>
+        <textarea id="inputText" placeholder="Enter the text to encrypt"></textarea>
+    
+        <label for="encryptionKey">Encryption Key:</label>
+        <input type="text" id="encryptionKey" placeholder="Enter the encryption key">
+
+        <button onclick="encrypt()">Encrypt</button>
+    
+        <div class="result">
+        <label for="encryptedText">Encrypted Text:</label>
+        <textarea id="encryptedText" placeholder="Paste the encrypted text here"></textarea>
+        </div>
+
+        <label for="encryptedInput">Encrypted Input:</label>
+        <input type="text" id="encryptedInput" placeholder="Paste the encrypted text here">
+
+        <label for="decryptionKey">Decryption Key:</label>
+        <input type="text" id="decryptionKey" placeholder="Enter the decryption key">
+
+        <button onclick="decryptInput()">Decrypt Input</button>
+
+        <div class="result">
+        <label for="decryptedInput">Decrypted Input:</label>
+        <textarea id="decryptedInput" readonly></textarea>
+        </div>
+    </div>
+<script src="rsa.js"></script>
+</body>
+</html>
